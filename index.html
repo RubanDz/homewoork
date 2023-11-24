@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      :root {width: 1600px; height: 900px;}
+      * {
+         box-sizing: border-box;
+      }
+   </style>
+</head>
+<body>
+   <!--SQUARE № 1 (REM- от размера шрифта HTML)-->
+   <!--Задача:
+               width: 480px (480px/16px=30rem)
+               height: 400px (400px/16px=25rem)
+               padding: 8px (8px/16px=0.5rem)
+               margin-bottom: 32px (32px/16px=2rem)
+               fond-size: 20px (20px/16px=1.25rem)-->
+   <div style="font-size: 1.25rem; margin-bottom: 2rem;">
+      <div style="border: 1px solid grey;
+      width: 30rem; height: 25rem; padding: 0.5rem;">
+         <p> fond-size: 1.25rem;
+            <br>
+            width: 30rem;
+            <br>
+            height: 25rem;
+            <br>
+            padding: 0.5rem;
+            <br>
+            margin-bottom: 2rem;
+         </p>
+      </div>
+   </div>
+   <!--SQUARE № 2 (EM- от размера шрифта элемента)-->
+   <!--Задача:
+               width: 480px (480px/20px=24em)
+               height: 400px (400px/20px=20em)
+               padding: 8px (8px/20px=0.4em)
+               margin-bottom: 32px (32px/20px=1.6em)-->
+   <div style="font-size: 20px; margin-bottom: 2em;">
+      <div style="border: 1px solid grey;
+      width: 24em; height: 20em; padding: 0.4em;">
+         <p> fond-size: 20px;
+            <br>
+            width: 24em;
+            <br>
+            height: 20em;
+            <br>
+            padding: 0.4em;
+            <br>
+            margin-bottom: 1.6em;
+         </p>
+      </div>
+   </div>
+   <!--SQUARE № 3 (%- width/height от родительского элемента)-->
+   <!--Задача:
+               width: 480px (480px=100%)
+               height: 400px (400px=100%)
+               padding: 8px (8px * 100% / 480px=1.67%)
+               margin-bottom: 32px (32px * 100% / 1600px=2%)-->
+   <div style="font-size: 20px; margin-bottom: 2%; height: 400px; width: 480px;">
+      <div style="border: 1px solid grey;
+      width: 100%; height: 100% ; padding: 1.67%;">
+         <p> fond-size: 20px;
+            <br>
+            width: 100%;
+            <br>
+            height: 100%;
+            <br>
+            padding: 1.67%;
+            <br>
+            margin-bottom: 2%;
+         </p>
+      </div>
+   </div>
+   <!--SQUARE № 4 (vh/vw от :root)-->
+   <!--Задача:
+               width: 480px (480px * 100vw / 1600px=30vw)
+               height: 400px (400px * 100vh / 900px=44.44vh)
+               padding: 8px (8px * 100vw / 480px=1.66vw)
+               margin-bottom: 32px (32px * 100vw / 1600px=2vw)-->
+   <div style="font-size: 20px; margin-bottom: 2vw;">
+      <div style="border: 1px solid grey; 
+      width: 30vw; height: 44.44vh ; padding: 0.89vh;">
+         <p> fond-size: 20px;
+            <br>
+            width: 30vw;
+            <br>
+            height: 44.44vh;
+            <br>
+            padding: 0.89vh;
+            <br>
+            margin-bottom: 2vw;
+         </p>
+      </div>
+   </div>
+        
+
+   
+</body>
+</html>
